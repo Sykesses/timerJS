@@ -9,6 +9,30 @@
   <body>
     <div class="timer-container">
       <h1 class="timer">00:00:00</h1>
+
+      <div class="mode-switch">
+        <button id="stopwatch-mode">Секундомер</button>
+        <button id="timer-mode">Таймер</button>
+      </div>
+
+      <div class="countdown-input" style="display: none">
+        <input type="number" id="hours" placeholder="Часы" min="0" />
+        <input
+          type="number"
+          id="minutes"
+          placeholder="Минуты"
+          min="0"
+          max="59"
+        />
+        <input
+          type="number"
+          id="seconds"
+          placeholder="Секунды"
+          min="0"
+          max="59"
+        />
+      </div>
+
       <div class="controls">
         <button id="start">Старт</button>
         <button id="stop">Стоп</button>

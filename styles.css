@@ -45,3 +45,12 @@ body {
 .controls button:active {
   background-color: #003d80;
 }
+
+.controls button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+
+.controls button {
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
